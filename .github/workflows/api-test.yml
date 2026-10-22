@@ -22,6 +22,10 @@ jobs:
 
       - name: 4. Chạy Collection với dữ liệu CSV
         run: |
-          newman run GoRest.postman_collection.json \
-          -e 2274802010869_HoTranQuangThuy_GoRest_Env.postman_environment.json \
-          -d users.csv
+            ls -la
+          
+            cat 2274802010869_HoTranQuangThuy_GoRest_Env.postman_environment.json
+          
+            newman run GoRest.postman_collection.json \
+            -e 2274802010869_HoTranQuangThuy_GoRest_Env.postman_environment.json \
+            -d users.csv
